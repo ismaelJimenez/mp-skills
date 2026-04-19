@@ -6,12 +6,27 @@ Skills are auto-synced daily from the upstream repo via GitHub Actions.
 
 ## Install
 
+### Via [Summon](https://github.com/ai-summon/summon)
+
+```bash
+summon install mp-skills
+```
+
+### Via Claude Code CLI
+
+```bash
+claude plugin marketplace add ai-summon/summon-marketplace # (once)
+
+claude plugin install mp-skills@summon-marketplace
+```
+
+### Via Copilot CLI
+
 ```bash
 # From a marketplace (once published)
-claude plugin install mp-skills@<marketplace>
+copilot plugin marketplace add ai-summon/summon-marketplace # (once)
 
-# Or load locally for testing
-claude --plugin-dir /path/to/mp-skills
+copilot plugin install mp-skills@summon-marketplace
 ```
 
 ## Usage
@@ -26,6 +41,26 @@ Skills are namespaced under `mp-skills`:
 ```
 
 Run `/help` to see all available skills.
+
+## Update
+
+### Via Summon
+
+```bash
+summon update mp-skills
+```
+
+### Via Claude Code CLI
+
+```bash
+claude plugin update mp-skills@summon-marketplace
+```
+
+### Via Copilot CLI
+
+```bash
+copilot plugin update mp-skills@summon-marketplace
+```
 
 ## How sync works
 
