@@ -23,7 +23,6 @@ claude plugin install mp-skills@summon-marketplace
 ### Via Copilot CLI
 
 ```bash
-# From a marketplace (once published)
 copilot plugin marketplace add ai-summon/summon-marketplace # (once)
 
 copilot plugin install mp-skills@summon-marketplace
